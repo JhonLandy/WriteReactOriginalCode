@@ -1,14 +1,14 @@
 import  React from 'react';
-import Page from '../views/page/index';
+import Table from '../views/table/index';
 const routeList = [
     {
-        name: "首页",
-        path: "*",
+        name: "表格",
+        path: "/table",
         exact: true,
         render(props){
-            return <Page {...props}/>;
+            return <Table {...props}/>;
         }
     }
 ];
 
-export {routeList};
+export default routeList;

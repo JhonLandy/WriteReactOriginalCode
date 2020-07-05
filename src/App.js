@@ -1,14 +1,14 @@
 import React from 'react';
-import Page from './views/page/index'
-import {withRouter, Switch, Route} from 'react-router-dom'
+import LayoutFrame from './views/components/Layout'
+
 import './App.css';
 
 function App() {
     return ( 
         <div className = "App" >
-            <Page / >
+            <LayoutFrame / >
         </div>
     );
 }
 
-export default withRouter(App);
+export default App;
