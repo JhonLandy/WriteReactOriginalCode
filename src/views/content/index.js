@@ -45,17 +45,13 @@ class Content extends Component {
     }
 }
 export default withRouter(Content);
-let {dispatch, getState} = store
+// let {dispatch, getState} = store
 
-store.dispatch = function(action) {
-  action(dispatch, getState)
-}
-retern 
-
-let a = next => action => action(next, getState)
-let b = a => action => a(action)
-let c = b => action => b(action)
-store.dispatch = c;
-reducer( (a, b) => {
-  return b(a)
-})
+// let a = next => action => action(next, getState)
+// let b = a => action => a(action)
+// let c = b => action => b(action)
+// store.dispatch = c;
+// 等同于
+// store.dispatch  = xx.reducer( (a, b) => {
+//   return b(a)
+// })
