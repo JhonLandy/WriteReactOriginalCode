@@ -4,7 +4,6 @@ import {Switch, Route, Link} from 'react-router-dom';
 import ContentPage from '../content/index';
 const {Header, Sider, Content } = Layout
 class Page extends Component {
-    
 
 
     render() {
